@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-# This block ensures compatibility with Render's environment
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))  # Render sets PORT dynamically
     app.run(host='0.0.0.0', port=port)
