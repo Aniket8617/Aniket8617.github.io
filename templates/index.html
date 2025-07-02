@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="/static/style.css">  <!-- AOS Animation Library -->  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>  <header data-aos="zoom-in">
+  <div class="header-container">
+    <img src="/static/images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+    <div class="header-text">
+    <h1>Prasanna Mali</h1>
+    <p>Web Developer | Python Programmer | Student</p>
+    </div>
+  </div>
+</header>  
+<nav>
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>  <section id="about" data-aos="fade-up">
+<h2>About Me</h2>
+<p>Hello! I'm Prasanna Mali, a passionate and curious Computer Science student with a strong love for coding that began in college and has grown into a lifelong pursuit. Always eager to explore innovative development techniques, I continuously strive to improve and expand my skillset.
+
+With a blend of creativity, logical thinking, and teamwork, I enjoy turning ideas into real-world applications. When I’m not coding, you’ll find me trekking through nature, capturing moments through photography, or lost in a good book.</p>
+<section id="skills" data-aos="fade-left">
+  <h2>🛠️ Skills</h2>
+
+  <div class="skills-section">
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Database & Concepts</h3>
+      <ul>
+        <li>DBMS</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Core Strengths</h3>
+      <ul>
+        <li>Critical Thinking</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Problem Solving</li>
+      </ul>
+    </div>
+  </div>
+</section>
+  <section id="projects" data-aos="zoom-in">
+  <h2>📁 Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>A dynamic and responsive portfolio website built using Flask to showcase my journey, skills, and projects.</p>
+      <p><strong>Tech Stack:</strong> Flask, HTML, CSS, JavaScript</p>
+    </div>
+  </div>
+</section>
+
+<section id="education" data-aos="fade-right">
+  <h2>🎓 Education</h2>
+  <div class="education-container">
+    <div class="education-card">
+      <h3>Diploma in Computer Science</h3>
+      <p>Currently Pursuing</p>
+    </div>
+    <div class="education-card">
+      <h3>12th Grade</h3>
+      <p>Scored: 75%</p>
+    </div>
+    <div class="education-card">
+      <h3>10th Grade</h3>
+      <p>Scored: 93%</p>
+    </div>
+  </div>
+</section>
+  
+<section id="certificates" data-aos="fade-up">
+  <h2>🏆 Certificates</h2>
+  <div class="certificate-container">
+    <div class="certificate-card">
+      <img src="{{ url_for('static', filename='certificates/certificate1.jpg') }}" alt="Certificate 1">
+      <h3>DBMS & ER Model</h3>
+      <p>Issued by: Infosys</p>
+      <a href="{{ url_for('static', filename='certificates/certificate1.jpg') }}" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+    <div class="certificate-card">
+      <img src="{{ url_for('static', filename='certificates/certificate2.jpg') }}" alt="Certificate 2">
+      <h3>Visual Graphics in C</h3>
+      <p>Issued by: Great Learning</p>
+      <a href="{{ url_for('static', filename='certificates/certificate2.jpg') }}" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="resume" data-aos="flip-left">
+  <h2>📄 Resume</h2>
+  <p>Click the button below to download my professional resume.</p>
+  <a href="{{ url_for('static', filename='prasanna_resume.docx') }}" download class="download-btn">Download Resume</a>
+</section>
+
+
+<section id="contact" data-aos="fade-up">
+  <h2>📩 Contact Me</h2>
+  <div class="contact-details">
+    <p><strong>📧 Email:</strong> <a href="mailto:prasannamali977@gmail.com">prasannamali977@gmail.com</a></p>
+    <p><strong>📱 Phone:</strong> +91-97636 21025</p>
+    <p><strong>🌍 Location:</strong> Pune, Maharashtra, India</p>
+  </div>
+</section>
+ 
+
+<footer>
+<p>&copy; 2025 prasanna mali. All rights reserved.</p>
+</footer>  <!-- AOS Script -->  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+AOS.init();
+</script>
+
+</body>
+</html>
